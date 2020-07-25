@@ -6,6 +6,8 @@
 
 ### Features:
 
+ - Included script to synchronize OrangeFox sources for supported Android version
+
  - Build OrangeFox without losing time doing ". build/envsetup.sh" and "lunch codename" or changing manually release version
 
  - Help you with exporting OF specific variables
@@ -14,9 +16,21 @@
 
 ### "How can I use it?"
 
- - Clone this repo to the root of OrangeFox sources
+ - Clone this repository
 
  - Give to scripts executing permissions
+
+ - Install Android build environment
+   <pre><code>bash setup/env.sh</code></pre>
+
+ - Synchronize OrangeFox sources
+
+   * Android 7.1 -> fox_7.1.sh
+   * Android 8.1 -> fox.8.1.sh
+   * Android 9.0 -> fox_9.0.sh
+
+   Example for Android 9.0 version:
+   <pre><code>bash setup/fox_9.0.sh</code></pre>
 
  - Create a file containing device-specific variables and put it in 
 <pre><code>OF_ROOT/configs/CODENAME_ofconfig</code></pre>
